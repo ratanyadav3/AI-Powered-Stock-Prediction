@@ -21,7 +21,9 @@ app.get("/api/v1/health",(req,res)=>{
 })
 
 import queryRoutes from './routes/queryRoutes.js';
+import dataRoutes from './routes/dataRoutes.js';
 
 app.use("/api/v1/query",queryRoutes);
+app.use("/api/v1/data",dataRoutes);
 
 export {app};

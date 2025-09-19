@@ -1,0 +1,28 @@
+# ml_scripts/config.py
+
+# --- MongoDB Configuration ---
+MONGO_URI = "mongodb://localhost:27017/"
+DATABASE_NAME = "Stock-Data"
+COLLECTION_NAME = "nifty50_daily"
+
+# --- Stock Tickers ---
+# A small list for testing. Expand this to all 50 for production.
+TICKERS = [
+    "ADANIENT.NS", "ADANIPORTS.NS", "APOLLOHOSP.NS", "ASIANPAINT.NS", "AXISBANK.NS",
+    "BAJAJ-AUTO.NS", "BAJFINANCE.NS", "BAJAJFINSV.NS", "BPCL.NS", "BHARTIARTL.NS",
+    "BRITANNIA.NS", "CIPLA.NS", "COALINDIA.NS", "DIVISLAB.NS", "DRREDDY.NS",
+    "EICHERMOT.NS", "GRASIM.NS", "HCLTECH.NS", "HDFCBANK.NS", "HDFCLIFE.NS",
+    "HEROMOTOCO.NS", "HINDALCO.NS", "HINDUNILVR.NS", "ICICIBANK.NS", "ITC.NS",
+    "INDUSINDBK.NS", "INFY.NS", "JSWSTEEL.NS", "KOTAKBANK.NS", "LTIM.NS",
+    "LT.NS", "M&M.NS", "MARUTI.NS", "NTPC.NS", "NESTLEIND.NS",
+    "ONGC.NS", "POWERGRID.NS", "RELIANCE.NS", "SBILIFE.NS", "SHRIRAMFIN.NS",
+    "SBIN.NS", "SUNPHARMA.NS", "TCS.NS", "TATACONSUM.NS", "TATAMOTORS.NS",
+    "TATASTEEL.NS", "TECHM.NS", "TITAN.NS", "ULTRACEMCO.NS", "WIPRO.NS"
+]
+
+# --- Model & Data Parameters ---
+MODEL_PATH = "ml_scripts/models/gru_model.h5"
+SCALERS_PATH = "ml_scripts/models/scalers.pkl"
+LOOKBACK_PERIOD = 60
+FEATURES_TO_USE = ['Close', 'Volume', 'RSI_14', 'MACD_12_26_9', 'volatility_20d']
+TARGET_COLUMN = 'Close'
