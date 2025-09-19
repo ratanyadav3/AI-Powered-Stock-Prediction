@@ -1,0 +1,24 @@
+# Data handling
+pandas==2.3.2
+numpy==2.2.6
+
+# Stock data
+yfinance==0.2.66
+pandas-datareader==0.10.0
+
+# Technical indicators
+pandas-ta==0.4.71b0
+
+# Database
+pymongo==4.15.1
+
+# Web scraping
+beautifulsoup4==4.13.5
+requests==2.32.5
+
+# Machine Learning
+scikit-learn==1.7.2
+tensorflow==2.20.0
+
+# Visualization
+matplotlib==3.10.6

@@ -118,3 +118,22 @@ dist
 .pnp.*
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node
+
+# Virtual Environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment variables (API Keys!)
+# ⚠️ NEVER upload your .env file
+.env
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Large data files (optional, but recommended)
+data/raw/
